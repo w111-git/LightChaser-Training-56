@@ -3,7 +3,7 @@
 int main(){
     int a,b,d;
     char c;
-    printf("ÇëÊäÈëÒ»¸öÊ½×Ó£º");
+    printf("è¯·è¾“å…¥ä¸€ä¸ªå¼å­");
     scanf("%d%c%d",&a,&c,&b);
     if(c=='+'){
       d=a+b;
@@ -23,11 +23,11 @@ int main(){
         printf("%d",d);
       }
       else{
-        printf("³ıÊı²»ÄÜÎª0");
+        printf("é™¤æ•°ä¸ç­‰äº0");
       }
     }
     else{
-      printf("·Ç·¨ÔËËã");
+      printf("å¼å­å‡ºé”™");
     }
     return 0;
  }

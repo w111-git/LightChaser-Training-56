@@ -2,25 +2,25 @@
 #include <stdlib.h>
 int main(){
     int n,b=0,c;
-    printf("Òª¼¸¸öÊı£¿ ");
+    printf("è¯·è¾“å…¥ä½ è¦å‡ ä¸ªæ•° ");
     if(n<=0){
-        printf("ÊäÈëµÄÊı±ØĞë´óÓÚ0\n");
+        printf("ä¸ªæ•°é”™è¯¯\n");
         return 1;
     }
     if (scanf("%d", &n) != 1) return 1;
     int *arr = (int*)malloc(n * sizeof(int));
     if (arr == NULL) { 
-        printf("ÄÚ´æ²»×ã\n");
+        printf("å†…å­˜ä¸è¶³\n");
         return 1;
     }
-    printf("ÇëÊäÈëÊı×é£º");
+    printf("è¯·è¾“å…¥æ•°ç»„");
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
          b +=arr[i];
     }
         c= b/n;
-        printf("Æ½¾ùÊıÊÇ%d\n",c);
-    free(arr);        // ¡ï ÓÃÍêºó±ØĞëÊÍ·Å£¬²»È»ÄÚ´æĞ¹Â©
-    arr = NULL;       // ¡ï ÖÃ¿Õ£¬·ÀÖ¹±ä³ÉÒ°Ö¸Õë
+        printf("å¹³å‡å€¼ä¸º%d\n",c);
+    free(arr);        // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·Å£ï¿½ï¿½ï¿½È»ï¿½Ú´ï¿½Ğ¹Â©
+    arr = NULL;       // ï¿½ï¿½ ï¿½Ã¿Õ£ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½Ò°Ö¸ï¿½ï¿½
     return 0;
 }
